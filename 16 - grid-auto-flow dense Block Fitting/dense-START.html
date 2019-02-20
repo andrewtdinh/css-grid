@@ -86,6 +86,11 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(10, 1fr)
+    }
+
+    .item:nth-child(6n) {
+      background: cornflowerblue;
     }
   </style>
 </body>
