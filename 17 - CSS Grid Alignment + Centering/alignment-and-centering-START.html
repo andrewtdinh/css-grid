@@ -54,10 +54,10 @@
 
   <style>
     /*
-      justify-items:
+      justify-items:  For the items within the children
       align-items:
 
-      justify-content:
+      justify-content:  For the item containers themselves.
       align-content:
 
       align-self:
@@ -70,11 +70,12 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(5, 130px);
       grid-template-rows: repeat(5, 100px);
       /* justify-items: center;
       align-items: end; */
-      place-items: center center;
+      place-items: stretch stretch;
+      justify-content: space-between;
     }
     .itm {
       background-color: white;
