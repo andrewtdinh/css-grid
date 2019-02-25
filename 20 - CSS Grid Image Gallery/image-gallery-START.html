@@ -103,6 +103,7 @@
     const digits = Array.from({length: 50}, () => {
       return [randomNumber(4), randomNumber(4)]
     });
+    const html = digits.map(generateHTML).join('');
   </script>
 
 </body>
