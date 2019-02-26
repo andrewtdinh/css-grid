@@ -133,9 +133,11 @@
     }
     const digits = Array.from({length: 50}, () => {
       return [randomNumber(4), randomNumber(4)]
-    });
+    }).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
     const html = digits.map(generateHTML).join('');
     gallery.innerHTML = html;
+    // You can perhaps use the gallery.offsetWidth and gallery.offsetHeight to recalculate
+    // how many ones you have to fill in upon window resizing event
   </script>
 
 </body>
