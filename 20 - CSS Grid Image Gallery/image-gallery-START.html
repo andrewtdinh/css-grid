@@ -171,6 +171,9 @@
       const src = e.currentTarget.querySelector('.img').src
       overlayImage.src = src;
     }
+    function open() {
+      overlay.classList.addd('open');
+    }
 
     const digits = Array.from({length: 50}, () => {
       return [randomNumber(4), randomNumber(4)]
