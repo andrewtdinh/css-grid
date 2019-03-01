@@ -170,12 +170,13 @@
     function handleClick(e) {
       const src = e.currentTarget.querySelector('.img').src
       overlayImage.src = src;
+      open();
     }
     function open() {
-      overlay.classList.addd('open');
+      overlay.classList.add('open');
     }
     function close() {
-      overlay.classList.addd('close');
+      overlay.classList.remove('close');
     }
 
     const digits = Array.from({length: 50}, () => {
