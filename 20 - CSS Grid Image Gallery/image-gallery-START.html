@@ -98,6 +98,7 @@
       transform: translateY(0);
     }
 
+
     .item.v2 {
       grid-row: span 2;
     }
@@ -121,6 +122,7 @@
     .item.h4 {
       grid-column: span 4;
     }
+
 
     .overlay {
       position: fixed;
@@ -151,8 +153,8 @@
   <script>
     const gallery = document.querySelector('.gallery'); 
     const overlay = document.querySelector('.overlay');
-    const overlayImage = document.querySelector('img');
-    const overlayClose = document.querySelector('.close');
+    const overlayImage = overlay.querySelector('img');
+    const overlayClose = overlay.querySelector('.close');
 
     function generateHTML([h, v]) {
       return `
@@ -168,12 +170,12 @@
       return Math.floor(Math.random() * limit) + 1;
     }
     function handleClick(e) {
-      const src = e.currentTarget.querySelector('.img').src
+      const src = e.currentTarget.querySelector('img').src
       overlayImage.src = src;
       overlay.classList.add('open');
     }
     function close() {
-      overlay.classList.remove('close');
+      overlay.classList.remove('open');
     }
 
     const digits = Array.from({length: 50}, () => {
