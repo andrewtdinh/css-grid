@@ -167,6 +167,11 @@
     function randomNumber(limit) {
       return Math.floor(Math.random() * limit) + 1;
     }
+    function handleClick(e) {
+      const src = e.currentTarget.querySelector('.img').src
+      overlayImage.src = src;
+    }
+
     const digits = Array.from({length: 50}, () => {
       return [randomNumber(4), randomNumber(4)]
     }).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]);
