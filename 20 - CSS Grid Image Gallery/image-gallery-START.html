@@ -174,6 +174,9 @@
     gallery.innerHTML = html;
     // You can perhaps use the gallery.offsetWidth and gallery.offsetHeight to recalculate
     // how many ones you have to fill in upon window resizing event
+
+    const items = document.querySelectorAll('.item');
+    items.forEach(item => item.addEventListener('click', handleClick));
   </script>
 
 </body>
