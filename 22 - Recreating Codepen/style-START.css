@@ -60,6 +60,11 @@ h6 {
   grid-template-columns: auto 1fr;
 }
 
+.editor__number {
+  display: block;
+  padding: 0 10px;
+}
+
 .editor__header {
   display: grid;
   grid-template-columns: auto 1fr auto;
