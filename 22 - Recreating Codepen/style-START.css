@@ -88,3 +88,8 @@ h6 {
   left: 3px;
   top: 3px;
 }
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
