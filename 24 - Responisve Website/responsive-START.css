@@ -27,7 +27,7 @@ img {
   background-position: bottom right;
   padding: 50px;
   display: grid;
-  justify-content: start;
+  justify-items: start;
   align-content: center;
 }
 
