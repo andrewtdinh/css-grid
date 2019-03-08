@@ -26,6 +26,12 @@ img {
   background-size: cover;
   background-position: bottom right;
   padding: 50px;
+  display: grid;
+  justify-items: start;
+}
+
+.hero > * {
+  background: var(--yellow);
 }
 
 .cta1 {
