@@ -28,7 +28,7 @@ img {
   padding: 50px;
   display: grid;
   justify-content: start;
-  align-items: center;
+  align-content: center;
 }
 
 .hero > * {
