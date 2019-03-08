@@ -27,7 +27,7 @@ img {
   background-position: bottom right;
   padding: 50px;
   display: grid;
-  justify-items: start;
+  justify-content: start;
 }
 
 .hero > * {
