@@ -60,3 +60,9 @@ img {
   font-size: 60px;
   font-weight: 300;
 }
+
+/* Navigation */
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
