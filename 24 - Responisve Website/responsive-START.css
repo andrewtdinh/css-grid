@@ -109,3 +109,11 @@ img {
 .feature p {
   color: rgba(0, 0, 0, 0.5);
 }
+
+/* About section */
+
+.about {
+  display: grid;
+  padding: 50px;
+  background: white;
+}
