@@ -85,3 +85,10 @@ img {
 [aria-controls="menu-list"] {
   display: none;
 }
+
+/* Features */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
