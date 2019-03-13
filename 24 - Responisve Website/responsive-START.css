@@ -12,12 +12,17 @@ img {
   max-width: 100%;
 }
 
+/* wrapper */
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
 .top {
   display: grid;
   grid-template-areas: 
     "hero hero cta1"
     "hero hero cta2";
-  grid-gap: 20px;
 }
 
 .hero {
@@ -90,7 +95,6 @@ img {
 
 .features {
   display: grid;
-  grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
@@ -116,4 +120,18 @@ img {
   display: grid;
   padding: 50px;
   background: white;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
 }
