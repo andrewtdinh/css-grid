@@ -148,9 +148,9 @@ img {
   display: block;
   content: '';
   height: 10px;
-  background: linear-gradient(to left, var(--yellow), transparent);
+  background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
 }
 
 .gallery h2:after { 
-  background: linear-gradient(to right, var(--yellow), transparent);
+  --direction: right;
 }
