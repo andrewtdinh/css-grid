@@ -169,6 +169,11 @@ img {
   #menu-list {
     padding-top: 0px;
   }
+
+  .menu ul {
+    max-height: 0;
+    transform: rotateX(90deg);
+  }
 }
 
 @media (max-width: 700px) {
