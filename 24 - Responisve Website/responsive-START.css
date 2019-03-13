@@ -156,6 +156,12 @@ img {
   --direction: right;
 }
 
+@media (max-width: 1000px) {
+  .menu {
+    order: -1;
+  }
+}
+
 @media (max-width: 700px) {
   .top {
     grid-template-areas: 
