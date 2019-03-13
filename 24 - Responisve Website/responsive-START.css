@@ -139,11 +139,14 @@ img {
 .gallery h2 {
   grid-column: 1 / -1;
   display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-gap: 20px;
+  align-items: center;
 }
 
 .gallery h2:before, .gallery h2:after {
   display: block;
   content: '';
   height: 10px;
-  background: #ffc600;
+  background: linear-gradient(to left, var(--yellow), transparent);
 }
