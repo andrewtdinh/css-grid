@@ -140,3 +140,10 @@ img {
   grid-column: 1 / -1;
   display: grid;
 }
+
+.gallery h2:before, .gallery h2:after {
+  display: block;
+  content: '';
+  height: 10px;
+  background: #ffc600;
+}
