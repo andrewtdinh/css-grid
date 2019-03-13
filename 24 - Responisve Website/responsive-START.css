@@ -173,6 +173,7 @@ img {
   .menu ul {
     max-height: 0;
     transform: rotateX(90deg);
+    transition: all 0.5s;
   }
 }
 
