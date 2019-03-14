@@ -102,6 +102,13 @@
   </div>
 
   <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav() {
+      console.log('Toggled');
+    }
+
+    navButton.addEventListener('click', toggleNav);
   </script>
   
 </body>
