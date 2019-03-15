@@ -159,6 +159,7 @@ img {
 @media (max-width: 1000px) {
   .menu {
     order: -1;
+    perspective: 800px;
   }
 
   [aria-controls="menu-list"] {
@@ -172,6 +173,7 @@ img {
 
   .menu ul {
     max-height: 0;
+    overflow: hidden;
     transform: rotateX(90deg);
     transition: all 0.5s;
   }
@@ -179,7 +181,7 @@ img {
   [aria-expanded="true"] ~ ul {
     display: grid;
     max-height: 500px;
-    transform: rotate(0deg);
+    transform: rotateX(0deg);
   }
 }
 
