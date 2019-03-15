@@ -175,6 +175,12 @@ img {
     transform: rotateX(90deg);
     transition: all 0.5s;
   }
+
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 500px;
+    transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 700px) {
