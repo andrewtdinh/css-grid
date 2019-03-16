@@ -188,8 +188,12 @@ img {
     display: none;
   }
 
-  [aria-expanded="true"] .open {
+  [aria-expanded="true"] .close {
     display: inline-block;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
   }
 }
 
